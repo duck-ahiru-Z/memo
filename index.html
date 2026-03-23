@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字化けメモ帳 - 絶望の保存体験</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/encoding-japanese/2.0.0/encoding.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>文字化けメモ超</h1>
+      <p class="subtitle">※保存したデータは二度と完全な状態には戻りません。</p>
+    </header>
+
+    <main>
+      <div class="input-area">
+        <textarea id="memo-input" placeholder="大切なメモを入力してください..."></textarea>
+        <button id="save-btn" class="btn-danger">メモを保存する</button>
+      </div>
+
+      <div class="list-area">
+        <h2>保存されたメモ一覧</h2>
+        <div id="memo-list">
+          </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
